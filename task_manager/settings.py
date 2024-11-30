@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
     'api'
 ]
 
@@ -83,7 +84,8 @@ DATABASES = {
 }
 
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSIONS_CLASSES': ["rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly"]
+    'DEFAULT_PERMISSIONS_CLASSES': ["rest_framework.permissions.IsAuthenticated"],
+    'DEFAULT_AUTHENTICATION_CLASSES': ["rest_framework.authentication.TokenAuthentication"]
 }
 
 # Password validation
