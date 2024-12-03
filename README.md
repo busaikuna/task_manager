@@ -175,7 +175,6 @@ curl -X POST http://127.0.0.1:8000/api/token \
 -d '{"username": "your_username", "password": "your_password"}'
 ```
 
----
 
 ### **2. Authenticate Requests**
 
@@ -200,7 +199,6 @@ curl -X POST http://127.0.0.1:8000/api/tasks/ \
 -d '{"title": "New Task", "description": "Task description"}'
 ```
 
----
 
 ### **Important Notes**
 
