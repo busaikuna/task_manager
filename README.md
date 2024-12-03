@@ -54,6 +54,7 @@ A project to implement a **task manager system** API using Django, Django Rest F
 
 4. **Apply Migrations**:
    ```bash
+   python manage.py makemigrations
    python manage.py migrate
    ```
 
